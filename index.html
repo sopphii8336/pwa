@@ -36,18 +36,8 @@ if ('serviceWorker' in navigator) {
 }
 </script>
   <script type="text/javascript">
-                // device APIs are available
-                function onDeviceReady() {
-                    if (history.length > 1) {
-                        navigator.app.exitApp();
-                        return;
-                    }
-                    
-                    //alert(navigator.network.connection.type);
-                    if (navigator.network.connection.type === Connection.NONE) {
-                        //location.replace("offline.html");
-                        location.href = "offline.html";
-                    } else {
+          
+                    } 
                         // <!-- Configuration Start: Please customize following configuration -->
                         location.replace("http://www.myhomes.com.tw/m/0968869633/");
                         // <!-- Configuration End -->
